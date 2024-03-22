@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "multiplatform-library-template"
-include(":library")
+rootProject.name = "kemiti-ai"
+include(":kemini-lib")

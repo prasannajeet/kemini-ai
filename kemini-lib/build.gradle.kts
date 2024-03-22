@@ -4,9 +4,11 @@ plugins {
     id("module.publication")
 }
 
+group = "ai.kemini"
+version = "0.0.1"
+
 kotlin {
     targetHierarchy.default()
-    jvm()
     androidTarget {
         publishLibraryVariants("release")
         compilations.all {
@@ -18,7 +20,10 @@ kotlin {
     iosX64()
     iosArm64()
     iosSimulatorArm64()
-    linuxX64()
+
+    // To be supported in later versions
+    //linuxX64()
+    //jvm()
 
     sourceSets {
         val commonMain by getting {
@@ -35,7 +40,7 @@ kotlin {
 }
 
 android {
-    namespace = "org.jetbrains.kotlinx.multiplatform.library.template"
+    namespace = "ai.kemini"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
