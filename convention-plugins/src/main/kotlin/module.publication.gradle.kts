@@ -18,9 +18,9 @@ publishing {
 
         // Provide artifacts information required by Maven Central
         pom {
-            name.set("Kotlin Multiplatform library template")
-            description.set("Dummy library to test deployment to Maven Central")
-            url.set("https://github.com/Kotlin/multiplatform-library-template")
+            name.set("Kemini - The Gemini AI KMM library")
+            description.set("Use Gemini AI in your KMM projects")
+            url.set("https://github.com/prasannajeet/kemini-ai")
 
             licenses {
                 license {
@@ -30,14 +30,14 @@ publishing {
             }
             developers {
                 developer {
-                    id.set("JetBrains")
-                    name.set("JetBrains Team")
-                    organization.set("JetBrains")
-                    organizationUrl.set("https://www.jetbrains.com")
+                    id.set("Prasan")
+                    name.set("Prasan Pani")
+                    organization.set("Prasan")
+                    organizationUrl.set("https://github.com/prasannajeet")
                 }
             }
             scm {
-                url.set("https://github.com/Kotlin/multiplatform-library-template")
+                url.set("https://github.com/prasannajeet/kemini-ai")
             }
         }
     }
